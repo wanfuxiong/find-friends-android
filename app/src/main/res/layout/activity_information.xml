@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:orientation="vertical"
+    tools:context=".activity.InformationActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:navigationIcon="@drawable/ic_goback"
+        android:background="@drawable/background_toolbar">
+
+        <TextView
+            android:id="@+id/textview_information_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="@string/text_username"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAppBackground"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageview_information_user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimaryLight"
+                android:scaleType="centerCrop" />
+
+            <!--        <com.google.android.material.imageview.ShapeableImageView-->
+            <!--            android:id="@+id/imageview_information_user_profile"-->
+            <!--            android:layout_width="200dp"-->
+            <!--            android:layout_height="200dp"-->
+            <!--            android:layout_marginTop="30dp"-->
+            <!--            android:background="@color/colorPrimaryLight"-->
+            <!--            android:scaleType="centerCrop"-->
+            <!--            app:shapeAppearanceOverlay="@style/circleStyle" />-->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/textview_information_signature"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    tools:text="个性签名" />
+
+                <ImageView
+                    android:id="@+id/imageview_information_edit_signature"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_signature" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tablelayout_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/drawable_background_login"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="40dp"
+                        android:src="@drawable/ic_logo_round" />
+
+                    <TextView
+                        android:id="@+id/textview_information_id"
+                        android:layout_width="0dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="1"
+                        android:autofillHints="none"
+                        android:background="@drawable/drawable_edittext_background"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.8dp"
+                    android:background="#DDDDDD" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="40dp"
+                        android:text="@string/text_username2"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_information_username"
+                        android:layout_width="0dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:autofillHints="none"
+                        android:background="@drawable/drawable_edittext_background"
+                        android:inputType="text"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.8dp"
+                    android:background="#DDDDDD" />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="20dp"
+                        android:text="@string/text_sex2"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imageview_information_sex"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.8dp"
+                    android:background="#DDDDDD" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="20dp"
+                        android:text="@string/text_phone_number2"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_information_phone_number"
+                        android:layout_width="0dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="1"
+                        android:autofillHints="none"
+                        android:maxLength="11"
+                        android:background="@drawable/drawable_edittext_background"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        tools:ignore="TextFields" />
+
+                    <ImageView
+                        android:id="@+id/imageview_information_dial"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_phone" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.8dp"
+                    android:background="#DDDDDD" />
+
+                <TableRow
+                    android:id="@+id/tablerow_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="20dp"
+                        android:text="@string/text_interest2"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_information_interest"
+                        android:layout_width="0dp"
+                        android:layout_height="26dp"
+                        android:layout_weight="1"
+                        android:autofillHints="none"
+                        android:maxLength="10"
+                        android:background="@drawable/drawable_edittext_background"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_information_save"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_save_changes"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="26dp"
+                app:rippleColor="@color/colorPrimaryExtraDark" />
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/button_information_delete"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:text="@string/text_delete"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"-->
+<!--                app:backgroundTint="@color/colorMy14"-->
+<!--                app:cornerRadius="26dp"-->
+<!--                app:rippleColor="@color/colorMy17" />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_information_chat"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/text_start_chat"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="26dp"
+                app:rippleColor="@color/colorPrimaryExtraDark" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

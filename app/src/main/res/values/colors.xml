@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#FF7C34</color>-->
+<!--    <color name="colorPrimaryDark">#752E17</color>-->
+
+<!--    <color name="colorPrimary">#FF8C00</color>-->
+<!--    <color name="colorPrimaryDark">#CD6839</color>-->
+
+<!--    <color name="colorPrimary">#FF7C34</color>-->
+<!--    <color name="colorPrimaryDark">#752E17</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+<!--    <color name="colorMy1">#F4A460</color>-->
+<!--    <color name="colorMy2">#752E17</color>-->
+<!--    <color name="colorPositive">#015C3D</color>-->
+
+<!--    &lt;!&ndash;默认头像专用颜色&ndash;&gt;-->
+<!--    <color name="colorProfile1">#F4A460</color>-->
+<!--    <color name="colorProfile2">#FF7C34</color>-->
+<!--    <color name="colorProfile3">#752E17</color>-->
+<!--    <color name="colorProfile4">#FFD39B</color>-->
+
+<!--    &lt;!&ndash;所有Activity背景色&ndash;&gt;-->
+<!--    <color name="colorAppBackground">#F8F8F8</color>-->
+
+<!--    &lt;!&ndash;取消和喜欢按钮的颜色&ndash;&gt;-->
+<!--    <color name="colorLike">#D81B60</color>-->
+<!--    <color name="colorCancel">#BBBBBB</color>-->
+
+<!--    <color name="colorMyGray">#888888</color>-->
+
+
+    <!-- https://material-io.cn/design/color/the-color-system.html#tools-for-picking-colors -->
+    <color name="colorPrimary">#ac82ff</color>
+    <color name="colorPrimaryDark">#8147f5</color>
+    <color name="colorAccent">#ff82d5</color>
+    <color name="colorAccentDark">#fd00a9</color>
+
+    <color name="colorPrimaryExtraDark">#7642ee</color>
+    <color name="colorPrimaryLight">#dccbfe</color>
+    <color name="colorPrimaryExtraLight">#f2eaff</color>
+
+    <color name="colorPositive">#d5ff82</color>
+    <color name="colorNegative">#8297ff</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorPlanetBackground">#120012</color>
+
+    <!-- Activity背景色 -->
+    <color name="colorAppBackground">#EEEEEE</color>
+
+    <color name="colorMyGrayDarkest">#444444</color>
+    <color name="colorMyGrayDark">#666666</color>
+    <color name="colorMyGray">#888888</color>
+    <color name="colorMyGrayLight">#AAAAAA</color>
+    <color name="colorMyGrayExtraLight">#CCCCCC</color>
+    <color name="colorMyGrayLightest">#EEEEEE</color>
+
+    <!--1:extralight-->
+    <!--2:light-->
+    <!--4:primary-->
+    <!--6:dark-->
+    <!--7:extradark-->
+    <color name="colorMy1">#f2eaff</color>
+    <color name="colorMy2">#dccbfe</color>
+    <color name="colorMy3">#c4a8fe</color>
+    <color name="colorMy4">#ac82ff</color>
+    <color name="colorMy5">#9663fd</color>
+    <color name="colorMy6">#8147f5</color>
+    <color name="colorMy7">#7642ee</color>
+    <color name="colorMy8">#6639e4</color>
+    <color name="colorMy9">#5733dc</color>
+    <color name="colorMy10">#3f27cd</color>
+
+    <color name="colorMy11">#fde9e4</color>
+    <color name="colorMy12">#ffccb3</color>
+    <color name="colorMy13">#ffac82</color>
+    <color name="colorMy14">#fc8c4f</color>
+    <color name="colorMy15">#f97525</color>
+    <color name="colorMy16">#f66000</color>
+    <color name="colorMy17">#ec5a00</color>
+    <color name="colorMy18">#de5300</color>
+    <color name="colorMy19">#d14b00</color>
+    <color name="colorMy20">#b83e00</color>
+
+    <color name="colorMy21">#fee2f5</color>
+    <color name="colorMy22">#fdb6e7</color>
+    <color name="colorMy23">#ff82d5</color>
+    <color name="colorMy24">#ff45bf</color>
+    <color name="colorMy25">#fd00a9</color>
+    <color name="colorMy26">#fe0091</color>
+    <color name="colorMy27">#ec008d</color>
+    <color name="colorMy28">#d30086</color>
+    <color name="colorMy29">#bc0081</color>
+    <color name="colorMy30">#900077</color>
+
+
+</resources>

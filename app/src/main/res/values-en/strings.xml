@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Find Friends</string>
+    <string name="app_version">V1.0.0</string>
+    <string name="app_author">Author: Wan Fuxiong</string>
+
+    <string name="title_home">Planet</string>
+    <string name="title_message">Message</string>
+    <string name="title_me">Me</string>
+
+    <string name="text_ok">OK</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_login">Login</string>
+    <string name="text_add">Add</string>
+    <string name="text_send">Send</string>
+    <string name="text_about">About</string>
+    <string name="text_password">Password</string>
+    <string name="text_sex">Sex</string>
+    <string name="text_interest">Interest</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_refresh">Refresh</string>
+
+    <string name="text_phone_number">Phone Number</string>
+    <string name="text_next">Next</string>
+    <string name="text_username">Username</string>
+
+    <string name="text_id">FF ID</string>
+    <string name="text_ff_id">FF ID: </string>
+    <string name="text_remember_password">Remember me</string>
+    <string name="text_auto_login">Auto Login</string>
+    <string name="text_go_to_register">Go To Register</string>
+    <string name="text_save_changes">Save Changes</string>
+    <string name="text_save_profile">Save Profile (Invalid Now)</string>
+    <string name="text_change_profile">Change Profile</string>
+    <string name="text_delete_profile">Delete Profile</string>
+    <string name="text_change_password">Change Password</string>
+    <string name="text_close_account">Close Account</string>
+    <string name="text_password_again">Again</string>
+    <string name="text_check_for_update">Check For Update</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_click_to_update">Click To Update</string>
+    <string name="text_wipe_password">Wipe Password</string>
+    <string name="text_search_anything">Search Anything</string>
+    <string name="text_search_ff">Search FF ID</string>
+    <string name="text_start_chat">Start Chating</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_description_load">Welcome Find Friends</string>
+    <string name="text_my_signature">My Signature</string>
+    <string name="text_about_body">The Author of Find Friends is Wan Fuxiong</string>
+    <string name="text_confirm_close">Are U Sure To Close Your Account?</string>
+    <string name="text_regist_success">Register Success!P</string>
+    <string name="text_please_remember">Please Remember your FF ID!</string>
+    <string name="text_get_start">Get Start!</string>
+    <string name="text_search">Search</string>
+    <string name="text_null_user">No Such User</string>
+    <string name="text_wipe_chat_record">Wipe Chat Record</string>
+    <string name="text_change_language">Change Language</string>
+    <string name="text_change_signature">Change Signature</string>
+    <string name="text_reboot_to_apply">Reboot To Apply</string>
+
+    <string name="text_please_input_original_password">Please Input Original Password</string>
+    <string name="text_please_input_new_password">Please Input New Password</string>
+    <string name="text_please_input_again_password">Please Input New Password Again</string>
+
+    <string name="text_chose_language">Please Choose Your Language</string>
+
+    <string name="error_internet">Internet Error</string>
+    <string name="error_language">Language Error</string>
+
+    <string name="text_username2">Username:</string>
+    <string name="text_password2">Password:</string>
+    <string name="text_interest2">Interest:</string>
+    <string name="text_password_again2">Again:</string>
+    <string name="text_sex2">Sex:</string>
+    <string name="text_phone_number2">Phone</string>
+
+    <string name="text_loading_login">Loading…</string>
+    <string name="text_loading_change_password">Checking Password…</string>
+    <string name="text_loading_closing">Closing To Apply Changes…</string>
+    <string name="text_loading_save_info">Saving Information…</string>
+    <string name="text_loading_register">Registering…</string>
+    <string name="text_loading_search">Searching…</string>
+    <string name="text_loading_update">Checking For Update…</string>
+    <string name="text_user_count">Online User Amount</string>
+    <string name="text_only_boys">Only Boys</string>
+    <string name="text_random">Random</string>
+    <string name="text_only_girls">Only girls</string>
+    <string name="text_matching">Matching…</string>
+    <string name="text_want_to_say">Say……</string>
+    <string name="text_add_moment">Add Moment</string>
+    <string name="text_send_moment">Send Moment</string>
+
+</resources>

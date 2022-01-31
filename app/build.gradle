@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.wanfuxiong.findfriends"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':soulplanet')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Material组件库
+    implementation 'com.google.android.material:material:1.3.0'
+    // Lombok
+    implementation 'org.projectlombok:lombok:1.18.18'
+    annotationProcessor 'org.projectlombok:lombok:1.18.18'
+    
+    implementation 'commons-codec:commons-codec:1.15'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    // implementation 'commons-beanutils:commons-beanutils:1.9.4'
+
+    // OkHttp http通信
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okio:okio:1.13.0'
+    // FastJSON JSON对象转换
+    implementation 'com.alibaba:fastjson:1.2.75'
+    // WebSocket 用于聊天
+    implementation 'org.java-websocket:Java-WebSocket:1.5.1'
+    // EventBus 用于接收消息事件
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+}

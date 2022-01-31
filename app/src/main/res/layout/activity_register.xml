@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    tools:context=".activity.RegisterActivity">
+
+    <RadioGroup
+        android:id="@+id/radiogroup_register_sex"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tablelayout_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobutton_register_male"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/drawable_radio_male"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_register_female"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/drawable_radio_female"
+            android:button="@null" />
+
+    </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/tablelayout_register"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/drawable_background_table"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="40dp"
+                android:labelFor="@+id/edittext_register_username"
+                android:text="@string/text_username2"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edittext_register_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:background="@drawable/drawable_edittext_background"
+                android:inputType="text"
+                android:maxLength="12"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/drawable_cursor" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.6dp"
+            android:background="#DDDDDD" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:text="@string/text_password2"
+                android:textSize="14sp"
+                android:labelFor="@+id/edittext_register_password"/>
+
+            <EditText
+                android:id="@+id/edittext_register_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:background="@drawable/drawable_edittext_background"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/drawable_cursor" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.6dp"
+            android:background="#DDDDDD" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:text="@string/text_password_again2"
+                android:textSize="14sp"
+                android:labelFor="@+id/edittext_register_password_again"/>
+
+            <EditText
+                android:id="@+id/edittext_register_password_again"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:background="@drawable/drawable_edittext_background"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/drawable_cursor" />
+
+        </TableRow>
+
+<!--        <View-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="0.6dp"-->
+<!--            android:background="#DDDDDD" />-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="12dp"-->
+<!--            android:paddingBottom="12dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:paddingEnd="20dp"-->
+<!--                android:text="@string/text_phone_number"-->
+<!--                android:textSize="14sp"-->
+<!--                android:labelFor="@+id/edittext_register_phone_number"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edittext_register_phone_number"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:autofillHints="none"-->
+<!--                android:background="@drawable/drawable_edittext_background"-->
+<!--                android:inputType="phone"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textCursorDrawable="@drawable/drawable_cursor" />-->
+
+<!--        </TableRow>-->
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.6dp"
+            android:background="#DDDDDD" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:text="@string/text_interest2"
+                android:labelFor="@+id/edittext_register_interest"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edittext_register_interest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:background="@drawable/drawable_edittext_background"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/drawable_cursor"
+                android:inputType="text" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/text_next"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="26dp"
+        app:rippleColor="@color/colorPrimaryExtraDark" />
+
+</RelativeLayout>

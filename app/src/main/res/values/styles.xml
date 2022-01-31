@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 移除状态栏所占位置 配合定制化Toolbar（android:fitsSystemWindows="true"）使用 -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="MyTheme" parent="AppTheme">
+        <!-- 移除状态栏所占位置 配合定制化Toolbar（android:fitsSystemWindows="true"）使用 -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="MyTheme2" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyLoad" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:windowActionBar">false</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--取消开启时的白屏/黑屏，但如果逻辑过多，会造成点开app图标需要等待两秒的情况-->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- ShapeableImageView（圆形） -->
+    <style name="circleStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- MyProgressDialog -->
+    <style name="MyProgressDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 在activity上 -->
+        <item name="android:windowIsFloating">true</item>
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

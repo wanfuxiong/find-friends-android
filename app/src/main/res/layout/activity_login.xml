@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    tools:context=".activity.LoginActivity">
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativelayout_loginandregister"
+        app:layout_constraintStart_toStartOf="@+id/relativelayout_loginandregister">
+
+        <ImageView
+            android:id="@+id/imageview_logo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_logo_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/baloo"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageview_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_loginandregister"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:background="@drawable/drawable_background_login"
+            android:paddingStart="24dp"
+            android:paddingEnd="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_input"
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edittext_id"
+                    android:layout_width="180dp"
+                    android:layout_height="49.7dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="@string/text_id"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/drawable_cursor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="0.6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#DDDDDD" />
+
+                <EditText
+                    android:id="@+id/edittext_password"
+                    android:layout_width="150dp"
+                    android:layout_height="49.7dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="@string/text_password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/drawable_cursor"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_wipe_password"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/linearlayout_input"
+                android:layout_alignBottom="@+id/linearlayout_input"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_wipe"
+                android:contentDescription="@string/text_wipe_password" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_login"
+                android:layout_width="88dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="6dp"
+                android:text="@string/text_login"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="20dp"
+                app:rippleColor="@color/colorPrimaryExtraDark" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview_gotoregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:padding="6dp"
+            android:text="@string/text_go_to_register"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            tools:ignore="RelativeOverlap" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:text="@string/text_auto_login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_update2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/text_click_to_update" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".fragment.MessageFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:id="@+id/toolbar_message"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/background_toolbar">
+
+            <TextView
+                android:id="@+id/textview_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="@string/title_message"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </Toolbar>
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/constraintlayout_message_header"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            android:background="@drawable/background_toolbar">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textview_message_title"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/title_message"-->
+        <!--                android:textColor="@android:color/white"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:layout_marginBottom="14dp"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent" />-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAppBackground"
+            tools:listitem="@layout/list_item_message"
+            tools:itemCount="20"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_message_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_search_button"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:rippleColor="@color/colorAccentDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
